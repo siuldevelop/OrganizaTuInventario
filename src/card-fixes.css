@@ -1,0 +1,22 @@
+/* Las acciones se reservan en una fila propia para no cubrir el pie de la card. */
+.card-body {
+  padding-bottom: 44px;
+}
+
+.card-actions {
+  right: 22px;
+  bottom: 16px;
+  justify-content: flex-end;
+}
+
+@media (max-width: 720px) {
+  .card-body {
+    padding-bottom: 0;
+  }
+
+  .card-actions {
+    position: static;
+    margin: 14px 0 0;
+    justify-content: flex-end;
+  }
+}
