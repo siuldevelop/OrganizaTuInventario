@@ -19,6 +19,8 @@ export const starterTemplates: InventoryTemplate[] = [
       { Placa: 'CX-35E', Motocicleta: 'AUTOMATICA VICTORY BLACK', Modelo: '2022', Color: 'NEGRO MATE', SOAT: 'NUEVO', Tecnomecánica: 'NUEVO', Traspasos: 'TRASPASOS', Precio: '$ 7.900.000' },
       { Placa: 'PF-99C', Motocicleta: 'FZ 16', Modelo: '2014', Color: 'PURPURA GRIS', SOAT: 'NUEVO', Tecnomecánica: 'SEPTIEMBRE', Traspasos: 'TRASPASOS', Precio: '$ 5.800.000' },
     ],
+    createdAt: 1,
+    isExample: true,
   },
   {
     id: 'products',
@@ -29,5 +31,7 @@ export const starterTemplates: InventoryTemplate[] = [
     updatedAt: 'Plantilla de ejemplo',
     recordCount: 0,
     records: [],
+    createdAt: 2,
+    isExample: true,
   },
 ]

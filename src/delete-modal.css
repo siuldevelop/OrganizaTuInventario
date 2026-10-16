@@ -1,0 +1,4 @@
+.delete-modal{position:relative;width:min(100%,460px);background:#fff;border:1px solid #f1d8d8;border-radius:14px;box-shadow:0 20px 60px rgba(8,22,40,.28);padding:30px;color:#172b4d;text-align:center}
+.delete-icon{width:48px;height:48px;border-radius:50%;display:grid;place-items:center;margin:0 auto 15px;background:#fff1f0;color:#c94d59}
+.delete-modal h2{font:700 21px 'Plus Jakarta Sans';margin:0 0 10px}.delete-modal p{font-size:14px;line-height:1.5;margin:0 auto 8px;color:#4f6580}.delete-modal .delete-warning{font-size:12px;color:#9b6b72;max-width:350px}.delete-modal .modal-actions{justify-content:center;margin-top:23px}
+.danger-button{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:1px solid #c94d59;background:#c94d59;color:#fff;border-radius:9px;font:600 14px 'DM Sans';padding:11px 17px;cursor:pointer}.danger-button:hover{background:#b63f4b}

@@ -9,4 +9,7 @@ export interface InventoryTemplate {
   updatedAt: string
   recordCount: number
   records: Record<string, string>[]
+  createdAt?: number
+  updatedAtMs?: number
+  isExample?: boolean
 }

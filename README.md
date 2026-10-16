@@ -22,7 +22,17 @@ También se puede crear una compilación de producción con `npm run build` y pr
 - Avisos claros para funciones que aún están pendientes.
 - Diseño preparado para el almacenamiento local y las fases posteriores.
 
-La duplicación de una tarjeta funciona de forma provisional en memoria para demostrar el flujo visual; todavía no existe persistencia.
+## Fase 2 implementada
+
+- Editor funcional con celdas editables y guardado automático.
+- Creación y eliminación de filas con confirmación.
+- Creación, renombrado y eliminación de columnas con advertencia si contienen datos.
+- Búsqueda de registros dentro de cada plantilla.
+- Creación, duplicación, renombrado y eliminación de plantillas.
+- Persistencia mediante IndexedDB, incluyendo recuperación después de recargar.
+- Indicadores de estado «Guardando», «Guardado» y «No se pudo guardar».
+
+La importación y exportación de Excel siguen pendientes para una fase posterior.
 
 ## Pendiente para la Fase 2
 
