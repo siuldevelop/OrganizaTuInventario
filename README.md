@@ -1,40 +1,75 @@
 # OrganizaTuInventario
 
-Aplicación web para crear y reutilizar plantillas de inventario. Esta versión corresponde a la Fase 1: estructura, navegación y pantalla inicial.
+Aplicación web para crear, personalizar y reutilizar plantillas de inventario desde el navegador. Está diseñada para funcionar sin cuentas de usuario ni backend: los datos se almacenan localmente en el navegador de cada usuario.
+
+## Estado del proyecto
+
+La versión actual incluye la Fase 1 y la Fase 2 del proyecto.
+
+### Plantillas
+
+- Dos plantillas iniciales: inventario de motocicletas e inventario de productos.
+- Creación de plantillas personalizadas.
+- Renombrado mediante modal integrado a la interfaz.
+- Duplicación completa como copia de seguridad independiente.
+- Eliminación con confirmación visual.
+- Vista en cuadrícula y vista apilada tipo folder.
+- Indicador relativo de última edición para plantillas modificadas.
+
+### Editor de inventario
+
+- Edición directa de celdas.
+- Creación y eliminación de filas.
+- Creación, renombrado y eliminación de columnas.
+- Búsqueda de registros.
+- Protección contra eliminaciones accidentales.
+- Selección de varias filas y eliminación masiva.
+- Deshacer la última acción con `Ctrl + Z`.
+- Guardado automático en IndexedDB.
+- Recuperación de datos después de recargar la página.
+
+## Almacenamiento y privacidad
+
+Los datos permanecen en el almacenamiento local del navegador. No se envían a un servidor y no es necesario crear una cuenta. Si se borran los datos del navegador, el inventario local podría perderse.
+
+La importación y exportación de Excel todavía no están implementadas.
 
 ## Ejecutar localmente
 
-Requisitos: Node.js 20 o superior.
+Requisitos:
+
+- Node.js 20 o superior.
+
+Instalar dependencias y iniciar el servidor de desarrollo:
 
 ```bash
 npm install
 npm run dev
 ```
 
-También se puede crear una compilación de producción con `npm run build` y previsualizarla con `npm run preview`.
+Para crear y revisar una compilación de producción:
 
-## Fase 1 implementada
+```bash
+npm run build
+npm run preview
+```
 
-- Pantalla «Mis plantillas» responsive en español.
-- Dos plantillas de ejemplo: motocicletas y productos.
-- Búsqueda visual de plantillas, tarjetas y estado vacío.
-- Entrada al editor con vista previa de columnas.
-- Avisos claros para funciones que aún están pendientes.
-- Diseño preparado para el almacenamiento local y las fases posteriores.
+## Tecnologías
 
-## Fase 2 implementada
+- React
+- TypeScript
+- Vite
+- IndexedDB
+- Lucide React
 
-- Editor funcional con celdas editables y guardado automático.
-- Creación y eliminación de filas con confirmación.
-- Creación, renombrado y eliminación de columnas con advertencia si contienen datos.
-- Búsqueda de registros dentro de cada plantilla.
-- Creación, duplicación, renombrado y eliminación de plantillas.
-- Persistencia mediante IndexedDB, incluyendo recuperación después de recargar.
-- Indicadores de estado «Guardando», «Guardado» y «No se pudo guardar».
+## Validación
 
-La importación y exportación de Excel siguen pendientes para una fase posterior.
+La compilación se valida con:
 
-## Pendiente para la Fase 2
+```bash
+npm run build
+```
 
-Implementar el modelo de datos definitivo, el editor editable, almacenamiento en IndexedDB, gestión de filas y columnas, y luego importación/exportación de Excel con validación.
-Aplicación web para crear, personalizar y gestionar plantillas de inventario, con edición de registros y columnas, búsqueda de productos e importación y exportación de archivos Excel. Los datos se guardan localmente en el navegador, sin necesidad de crear una cuenta.
+## Próxima fase
+
+La siguiente ampliación prevista es la importación y exportación de archivos `.xlsx`, incluyendo selección de hojas, previsualización, relación de columnas, validación y confirmación antes de modificar los registros.
