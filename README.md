@@ -32,7 +32,17 @@ La versión actual incluye la Fase 1 y la Fase 2 del proyecto.
 
 Los datos permanecen en el almacenamiento local del navegador. No se envían a un servidor y no es necesario crear una cuenta. Si se borran los datos del navegador, el inventario local podría perderse.
 
-La importación y exportación de Excel todavía no están implementadas.
+### Excel
+
+- Importación de archivos `.xlsx` y `.xls`.
+- Selección de hoja cuando el archivo contiene varias.
+- Previsualización de encabezados y registros.
+- Relación de columnas del archivo con las columnas de la plantilla.
+- Opción para agregar registros o reemplazar los existentes.
+- Confirmación antes de aplicar cambios.
+- Exportación de la plantilla actual a `.xlsx`.
+
+La compatibilidad se centra en datos tabulares. No se prometen macros, gráficos ni funciones avanzadas de Excel.
 
 ## Ejecutar localmente
 
@@ -72,4 +82,4 @@ npm run build
 
 ## Próxima fase
 
-La siguiente ampliación prevista es la importación y exportación de archivos `.xlsx`, incluyendo selección de hojas, previsualización, relación de columnas, validación y confirmación antes de modificar los registros.
+Las siguientes mejoras pueden centrarse en validaciones específicas por tipo de columna, formatos monetarios en la exportación y pruebas adicionales con archivos reales.

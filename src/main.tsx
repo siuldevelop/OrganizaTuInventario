@@ -7,6 +7,7 @@ import './editor-fixes.css'
 import './delete-modal.css'
 import './bulk-fixes.css'
 import './stack-fixes.css'
+import './excel-fixes.css'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode><App /></StrictMode>,
